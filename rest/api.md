@@ -5,6 +5,7 @@
 Method  | URI	 											    | Description                                                     |
 -------:|:------------------------------------------------------|:----------------------------------------------------------------|
 GET		| /														| Lists all endpoints, used for checking authentication.
+GET             | /experiments                                                                                  | List all experiments.
 PUT		| /experiments											| Creates a new experiment.
 GET		| /experiments/**{id}**									| Lists all properties of a given experiment.
 PATCH 	| /experiments/**{id}**									| Edits the given properties of an experiment.
