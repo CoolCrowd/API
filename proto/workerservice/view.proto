@@ -6,9 +6,9 @@ option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
 
 message View {
   Type type = 1;
-	string title = 2;
-	string description = 3;
-	repeated string constraints = 4;
+  string title = 2;
+  string description = 3;
+  repeated string constraints = 4;
   repeated Picture pictures = 5;
 
   enum Type {
