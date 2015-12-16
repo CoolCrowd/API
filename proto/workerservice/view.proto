@@ -3,7 +3,7 @@ syntax = "proto3";
 package crowdcontrol;
 
 option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
-option java_outer_classname = "Protos";
+option java_outer_classname = "View";
 
 message View {
   Type type = 1;
