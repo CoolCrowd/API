@@ -9,11 +9,30 @@ message Experiment {
 	required int32 id = 1;
 	required string title = 2;
 	required string description = 3;
+
 	string algorithm_task_chooser = 4;
 	string algorithm_quality_answer = 5;
 	string algorithm_quality_rating = 6;
+
 	int32 ratings_per_answer = 7;
+
 	int32 payment_base = 8;
 	int32 payment_answer = 9;
 	int32 payment_rating = 10;
+
+	message Constraint {
+		required string name;
+	}
+
+	repeated constraints = 11;
+
+	message Tag {
+		required string name;
+	}
+
+	repeated tags = 12;
+}
+
+message ExperimentList {
+	repeated Experiment;
 }
