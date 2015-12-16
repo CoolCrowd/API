@@ -2,14 +2,13 @@ syntax = "proto3";
 
 package crowdcontrol;
 
-option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
-option java_outer_classname = "View";
+option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
 
 message View {
   Type type = 1;
 	string title = 2;
 	string description = 3;
-	repeated String constraints = 4;
+	repeated string constraints = 4;
   repeated Picture pictures = 5;
 
   enum Type {
@@ -20,7 +19,7 @@ message View {
   }
 
   message Picture {
-    String url = 1;
-    String url_license = 2;
+    string url = 1;
+    string url_license = 2;
   }
 }
