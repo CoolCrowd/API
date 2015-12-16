@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package crowdcontrol;
+
+option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
+option java_outer_classname = "Protos";
+
+message View {
+  Type type = 1;
+	string title = 2;
+	string description = 3;
+	repeated String constraints = 4;
+  repeated Picture pictures = 5;
+
+  enum Type {
+    FINISHED = 0;
+    ANSWER = 1;
+    RATING = 2;
+    CALIBRATION = 3;
+  }
+
+  message Picture {
+    String url = 1;
+    String url_license = 2;
+  }
+}
