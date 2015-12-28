@@ -5,7 +5,7 @@ package crowdcontrol;
 option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
 
 message View {
-  int workerID = 1;
+  int32 workerID = 1;
   Type type = 2;
   string title = 3;
   string description = 4;
@@ -22,13 +22,13 @@ message View {
   }
 
   message Picture {
-    string url = 0;
-    string url_license = 1;
+    string url = 1;
+    string url_license = 2;
   }
 
   message Calibrations {
-    string question = 0;
-    repeated string answerOptions = 1;
-    string description = 2;
+    string question = 1;
+    repeated string answerOptions = 2;
+    string description = 3;
   }
 }
