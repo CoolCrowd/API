@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package crowdcontrol;
+
+option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
+
+message Worker {
+  int32 workerID = 1;
+  Type type = 2;
+  string data = 3;
+
+  enum Type {
+    ANSWER = 0;
+    RATING = 2;
+    CALIBRATION = 3;
+    EMAIL = 4;
+  }
+}

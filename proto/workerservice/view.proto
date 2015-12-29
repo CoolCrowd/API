@@ -11,7 +11,7 @@ message View {
   string description = 4;
   repeated string constraints = 5;
   repeated Picture pictures = 6;
-  Calibrations calibrations = 7;
+  repeated Calibrations calibrations = 7;
 
   enum Type {
     FINISHED = 0;
