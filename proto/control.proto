@@ -24,14 +24,14 @@ message Experiment {
 	repeated Tag tags = 12;
 
 	map<string, string> placeholders = 13;
+}
 
-	message Constraint {
-		string name = 1;
-	}
+message Constraint {
+	string name = 1;
+}
 
-	message Tag {
-		string name = 1;
-	}
+message Tag {
+	string name = 1;
 }
 
 message ExperimentList {

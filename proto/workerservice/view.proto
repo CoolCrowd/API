@@ -6,10 +6,13 @@ option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
 
 message View {
   int32 workerID = 1;
+
   Type type = 2;
+
   string title = 3;
   string description = 4;
-  repeated string constraints = 5;
+
+  repeated Constraint constraints = 5;
   repeated Picture pictures = 6;
   repeated Calibrations calibrations = 7;
 
