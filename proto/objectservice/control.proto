@@ -87,3 +87,14 @@ message Population {
 	string name = 2;
 	string description = 3;
 }
+
+message NotificationList {
+	repeated Notification items = 1;
+}
+
+message Notification {
+	int32 id = 1;
+	string name = 2;
+	string sql = 3;
+	int32 time = 4;
+}
