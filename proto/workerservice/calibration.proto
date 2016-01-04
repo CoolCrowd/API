@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package crowdcontrol;
+
+option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
+
+message Calibration {
+  int32 workerID = 1;
+  int32 answerOption = 2;
+}

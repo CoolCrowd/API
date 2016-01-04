@@ -33,5 +33,6 @@ message View {
     string question = 1;
     repeated string answerOptions = 2;
     string description = 3;
+    int32 id = 4;
   }
 }

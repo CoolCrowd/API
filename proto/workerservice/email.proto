@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package crowdcontrol;
+
+option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
+
+message Email {
+  string email = 1;
+}

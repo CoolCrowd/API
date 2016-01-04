@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package crowdcontrol;
+
+option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
+
+message Answer {
+  int32 workerID = 1;
+  string answer = 2;
+  int32 task = 3;
+}
