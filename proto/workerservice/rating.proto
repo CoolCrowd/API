@@ -5,8 +5,7 @@ package crowdcontrol;
 option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
 
 message Rating {
-  int32 workerID = 1;
-  int32 rating = 2;
-  int32 task = 3;
-  int32 answerID = 4;
+  int32 rating = 1;
+  int32 task = 2;
+  int32 answerID = 3;
 }

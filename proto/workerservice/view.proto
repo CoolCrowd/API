@@ -11,11 +11,12 @@ message View {
 
   string title = 3;
   string description = 4;
+  int32 task = 5;
 
-  repeated Answer answers = 5;
-  repeated Constraint constraints = 6;
-  repeated Picture pictures = 7;
-  repeated Calibrations calibrations = 8;
+  repeated Answer answers = 6;
+  repeated Constraint constraints = 7;
+  repeated Picture pictures = 8;
+  repeated Calibrations calibrations = 9;
 
   enum Type {
     FINISHED = 0;
