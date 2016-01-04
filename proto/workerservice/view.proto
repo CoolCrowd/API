@@ -12,9 +12,10 @@ message View {
   string title = 3;
   string description = 4;
 
-  repeated Constraint constraints = 5;
-  repeated Picture pictures = 6;
-  repeated Calibrations calibrations = 7;
+  repeated Answer answers = 5;
+  repeated Constraint constraints = 6;
+  repeated Picture pictures = 7;
+  repeated Calibrations calibrations = 8;
 
   enum Type {
     FINISHED = 0;
@@ -34,5 +35,10 @@ message View {
     repeated string answerOptions = 2;
     string description = 3;
     int32 id = 4;
+  }
+
+  message Answer {
+    int32 id = 1;
+    string answer = 2;
   }
 }

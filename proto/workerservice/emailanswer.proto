@@ -5,6 +5,6 @@ package crowdcontrol;
 option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
 
 message Email {
-  string email = 1;
+  int32 code = 1;
   int32 workerID = 2;
 }
