@@ -7,6 +7,7 @@ option java_multiple_files = true;
 message Notification {
 	int32 id = 1;
 	string name = 2;
-	string sql = 3;
-	int32 time = 4;
+	string query = 3;
+	int32 check_period = 4;
+	int32 send_threshold = 5;
 }
