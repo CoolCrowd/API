@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package crowdcontrol;
+option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
+option java_multiple_files = true;
+
+message Template {
+	int32 id = 1;
+	string name = 2;
+	string content = 3;
+}

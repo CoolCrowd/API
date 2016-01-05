@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package crowdcontrol;
+option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
+option java_multiple_files = true;
+
+import "rating.proto";
+
+message Answer {
+	int32 id = 1;
+	int32 worker = 2;
+	string content = 3;
+	int32 time = 4;
+	int32 quality = 5;
+
+	repeated Rating ratings = 6;
+}

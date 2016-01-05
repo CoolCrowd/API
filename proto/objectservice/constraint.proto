@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package crowdcontrol;
+option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
+option java_multiple_files = true;
+
+message Constraint {
+	string name = 1;
+}

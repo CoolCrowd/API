@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package crowdcontrol;
+option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
+option java_multiple_files = true;
+
+import "worker.proto";
+
+message WorkerList {
+	repeated Worker items = 1;
+}
