@@ -14,7 +14,7 @@ message View {
   int32 task = 5;
 
   repeated Answer answers = 6;
-  repeated Constraint constraints = 7;
+  repeated string constraints = 7;
   repeated Picture pictures = 8;
   repeated Calibrations calibrations = 9;
 
