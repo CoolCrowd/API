@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package crowdcontrol;
 
-option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
+option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
 option java_multiple_files = true;
 
 message View {
-  int32 workerID = 1;
+  int32 worker_id = 1;
 
   Type type = 2;
 
@@ -34,7 +34,7 @@ message View {
 
   message Calibrations {
     string question = 1;
-    repeated string answerOptions = 2;
+    repeated string answer_options = 2;
     string description = 3;
     int32 id = 4;
   }

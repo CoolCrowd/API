@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package crowdcontrol;
 
-option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
+option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
 option java_multiple_files = true;
 
 message EmailAnswer {
-  int32 workerID = 1;
+  int32 worker_id = 1;
 }
