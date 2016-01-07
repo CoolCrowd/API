@@ -38,8 +38,13 @@ message View {
 
   message Calibration {
     string question = 1;
-    repeated string answerOptions = 2;
+    repeated CalibrationAnswerOption answerOptions = 2;
     int32 id = 3;
+  }
+
+  message CalibrationAnswerOption {
+    string option = 1;
+    int32 id = 2;
   }
 
   message Answer {
