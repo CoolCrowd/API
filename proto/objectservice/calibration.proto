@@ -4,12 +4,8 @@ package crowdcontrol;
 option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
 option java_multiple_files = true;
 
-import "calibration.proto";
-
-message Population {
-	int32 id = 1;
-	string name = 2;
-	string platform = 3;
-
-	repeated Calibration calibrations = 4;
+message Calibration {
+	string question = 1;
+	repeated string answers = 2;
+	repeated string accepted_answers = 3;
 }

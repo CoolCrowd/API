@@ -5,6 +5,7 @@ option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
 option java_multiple_files = true;
 
 import "constraint.proto";
+import "population.proto";
 import "tag.proto";
 
 message Experiment {
@@ -26,4 +27,6 @@ message Experiment {
 	repeated Tag tags = 12;
 
 	map<string, string> placeholders = 13;
+
+	repeated Population populations = 14;
 }
