@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package crowdcontrol;
 
-option java_package = "edu.ipd.kit.crowdcontrol.workerservice.proto";
+option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
 option java_multiple_files = true;
 
 message View {
-  int32 workerID = 1;
+  int32 worker_id = 1;
 
   Type type = 2;
 
@@ -15,9 +15,9 @@ message View {
   int32 task = 5;
 
   repeated Answer answers = 6;
-  repeated string constraints = 7;
+  repeated Constraint constraints = 7;
   repeated Picture pictures = 8;
-  repeated Calibrations calibrations = 9;
+  repeated Calibration calibrations = 9;
 
   enum Type {
     FINISHED = 0;
@@ -27,15 +27,19 @@ message View {
     EMAIL = 4;
   }
 
+  message Constraint {
+    string name = 1;
+  }
+
   message Picture {
     string url = 1;
     string url_license = 2;
   }
 
-  message Calibrations {
+  message Calibration {
     string question = 1;
     repeated string answerOptions = 2;
-    int32 id = 4;
+    int32 id = 3;
   }
 
   message Answer {
