@@ -9,9 +9,11 @@ import "population.proto";
 import "tag.proto";
 
 message Experiment {
-	int32 id = 1;
-	string title = 2;
-	string description = 3;
+	int32 id = 0;
+	string title = 1;
+	string description = 2;
+
+	State state = 3;
 
 	string algorithm_task_chooser = 4;
 	string algorithm_quality_answer = 5;
@@ -29,4 +31,11 @@ message Experiment {
 	map<string, string> placeholders = 13;
 
 	repeated Population populations = 14;
+
+	enum State {
+		DRAFT = 0;
+		PUBLISHED = 1;
+		STOPPING = 2;
+		STOPPED = 3;
+	}
 }
