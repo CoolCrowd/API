@@ -10,6 +10,7 @@ message Population {
 	int32 id = 1;
 	string name = 2;
 	string platform = 3;
+	int32 minimum_rating = 4;
 
-	repeated Calibration calibrations = 4;
+	repeated Calibration calibrations = 5;
 }
