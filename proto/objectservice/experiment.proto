@@ -4,43 +4,39 @@ package crowdcontrol;
 option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
 option java_multiple_files = true;
 
+import "answer_type.proto";
 import "constraint.proto";
 import "population.proto";
 import "tag.proto";
 
 message Experiment {
-	int32 id = 0;
-	string title = 1;
-	string description = 2;
+	int32 id = 1;
+	string title = 2;
+	string description = 3;
 
-	State state = 3;
-	AnswerType answer_type = 4;
+	State state = 4;
+	AnswerType answer_type = 5;
 
-	string algorithm_task_chooser = 5;
-	string algorithm_quality_answer = 6;
-	string algorithm_quality_rating = 7;
+	string algorithm_task_chooser = 6;
+	string algorithm_quality_answer = 7;
+	string algorithm_quality_rating = 8;
 
-	int32 ratings_per_answer = 8;
+	int32 ratings_per_answer = 9;
 
-	int32 payment_base = 9;
-	int32 payment_answer = 10;
-	int32 payment_rating = 11;
+	int32 payment_base = 10;
+	int32 payment_answer = 11;
+	int32 payment_rating = 12;
 
-	repeated Constraint constraints = 12;
-	repeated Tag tags = 13;
+	repeated Constraint constraints = 13;
+	repeated Tag tags = 14;
 	repeated Population populations = 15;
 
-	map<string, string> placeholders = 14;
+	map<string, string> placeholders = 16;
 
 	enum State {
 		DRAFT = 0;
 		PUBLISHED = 1;
 		STOPPING = 2;
 		STOPPED = 3;
-	}
-
-	enum AnswerType {
-		TEXT = 0;
-		IMAGE = 1;
 	}
 }

@@ -4,11 +4,7 @@ package crowdcontrol;
 option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
 option java_multiple_files = true;
 
-import "answer_type.proto";
-
-message Template {
-	int32 id = 1;
-	string name = 2;
-	string content = 3;
-	AnswerType answer_type = 4;
+enum AnswerType {
+	TEXT = 0;
+	IMAGE = 1;
 }
