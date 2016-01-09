@@ -14,28 +14,33 @@ message Experiment {
 	string description = 2;
 
 	State state = 3;
+	AnswerType answer_type = 4;
 
-	string algorithm_task_chooser = 4;
-	string algorithm_quality_answer = 5;
-	string algorithm_quality_rating = 6;
+	string algorithm_task_chooser = 5;
+	string algorithm_quality_answer = 6;
+	string algorithm_quality_rating = 7;
 
-	int32 ratings_per_answer = 7;
+	int32 ratings_per_answer = 8;
 
-	int32 payment_base = 8;
-	int32 payment_answer = 9;
-	int32 payment_rating = 10;
+	int32 payment_base = 9;
+	int32 payment_answer = 10;
+	int32 payment_rating = 11;
 
-	repeated Constraint constraints = 11;
-	repeated Tag tags = 12;
+	repeated Constraint constraints = 12;
+	repeated Tag tags = 13;
+	repeated Population populations = 15;
 
-	map<string, string> placeholders = 13;
-
-	repeated Population populations = 14;
+	map<string, string> placeholders = 14;
 
 	enum State {
 		DRAFT = 0;
 		PUBLISHED = 1;
 		STOPPING = 2;
 		STOPPED = 3;
+	}
+
+	enum AnswerType {
+		TEXT = 0;
+		IMAGE = 1;
 	}
 }
