@@ -34,9 +34,10 @@ message Experiment {
 	map<string, string> placeholders = 16;
 
 	enum State {
-		DRAFT = 0;
-		PUBLISHED = 1;
-		STOPPING = 2;
-		STOPPED = 3;
+		INVALID = 0;
+		DRAFT = 1;
+		PUBLISHED = 2;
+		STOPPING = 3;
+		STOPPED = 4;
 	}
 }

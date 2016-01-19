@@ -5,6 +5,7 @@ option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
 option java_multiple_files = true;
 
 enum AnswerType {
-	TEXT = 0;
-	IMAGE = 1;
+	INVALID = 0;
+	TEXT = 1;
+	IMAGE = 2;
 }
