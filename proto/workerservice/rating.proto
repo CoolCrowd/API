@@ -7,6 +7,5 @@ option java_multiple_files = true;
 
 message Rating {
   int32 rating = 1;
-  int32 task = 2;
-  int32 answer_id = 3;
+  int32 answer_id = 2;
 }
