@@ -7,4 +7,5 @@ option java_multiple_files = true;
 
 message Answer {
   string answer = 1;
+  int32 experiment = 2;
 }
