@@ -15,9 +15,10 @@ message View {
   int32 task = 5;
 
   repeated Answer answers = 6;
-  repeated Constraint constraints = 7;
-  repeated Picture pictures = 8;
-  repeated Calibration calibrations = 9;
+  repeated RatingOption ratingOptions = 7;
+  repeated Constraint constraints = 8;
+  repeated Picture pictures = 9;
+  repeated Calibration calibrations = 10;
 
   enum Type {
     FINISHED = 0;
@@ -50,5 +51,10 @@ message View {
   message Answer {
     int32 id = 1;
     string answer = 2;
+  }
+
+  message RatingOption {
+    int32 value = 1;
+    string description = 2;
   }
 }
