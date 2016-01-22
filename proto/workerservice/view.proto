@@ -13,11 +13,12 @@ message View {
   string title = 3;
   string description = 4;
 
-  repeated Answer answers = 5;
-  repeated RatingOption ratingOptions = 6;
-  repeated Constraint constraints = 7;
-  repeated Picture pictures = 8;
-  repeated Calibration calibrations = 9;
+  int32 maxAnswers_to_give = 5;
+  repeated Answer answers_to_rate = 6;
+  repeated RatingOption ratingOptions = 7;
+  repeated Constraint constraints = 8;
+  repeated Picture pictures = 9;
+  repeated Calibration calibrations = 10;
 
   enum Type {
     FINISHED = 0;
