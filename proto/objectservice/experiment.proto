@@ -35,6 +35,8 @@ message Experiment {
 
 	map<string, string> placeholders = 18;
 
+	int32 template_id = 19;
+
 	enum State {
 		INVALID = 0;
 		DRAFT = 1;
