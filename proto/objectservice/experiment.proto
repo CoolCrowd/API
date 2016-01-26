@@ -6,7 +6,7 @@ option java_multiple_files = true;
 
 import "answer_type.proto";
 import "constraint.proto";
-import "population.proto";
+import "platform.proto";
 import "tag.proto";
 
 message Experiment {
@@ -31,11 +31,13 @@ message Experiment {
 
 	repeated Constraint constraints = 15;
 	repeated Tag tags = 16;
-	repeated Population populations = 17;
+	repeated Platform platforms = 17;
 
 	map<string, string> placeholders = 18;
 
-	int32 template_id = 19;
+	int32 worker_quality_threshold = 19;
+
+	int32 template_id = 20;
 
 	enum State {
 		INVALID = 0;
