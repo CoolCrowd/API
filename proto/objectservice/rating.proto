@@ -5,8 +5,9 @@ option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
 option java_multiple_files = true;
 
 message Rating {
-	int32 rating = 1;
-	string feedback = 2;
-	int32 worker = 3;
-	int32 time = 4;
+	int32 experiment_id = 1;
+	int32 rating = 2;
+	string feedback = 3;
+	int32 worker = 4;
+	int32 time = 5;
 }
