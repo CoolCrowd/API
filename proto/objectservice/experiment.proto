@@ -25,19 +25,21 @@ message Experiment {
 	int32 ratings_per_worker = 10;
 	int32 ratings_per_answer = 11;
 
-	int32 payment_base = 12;
-	int32 payment_answer = 13;
-	int32 payment_rating = 14;
+	int32 needed_answers = 12;
 
-	repeated Constraint constraints = 15;
-	repeated Tag tags = 16;
-	repeated Platform platforms = 17;
+	int32 payment_base = 13;
+	int32 payment_answer = 14;
+	int32 payment_rating = 15;
 
-	map<string, string> placeholders = 18;
+	repeated Constraint constraints = 16;
+	repeated Tag tags = 17;
+	repeated Platform platforms = 18;
 
-	int32 worker_quality_threshold = 19;
+	map<string, string> placeholders = 19;
 
-	int32 template_id = 20;
+	int32 worker_quality_threshold = 20;
+
+	int32 template_id = 21;
 
 	enum State {
 		INVALID = 0;
