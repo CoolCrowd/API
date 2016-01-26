@@ -21,17 +21,19 @@ message Experiment {
 	string algorithm_quality_answer = 7;
 	string algorithm_quality_rating = 8;
 
-	int32 ratings_per_answer = 9;
+	int32 answers_per_worker = 9;
+	int32 ratings_per_worker = 10;
+	int32 ratings_per_answer = 11;
 
-	int32 payment_base = 10;
-	int32 payment_answer = 11;
-	int32 payment_rating = 12;
+	int32 payment_base = 12;
+	int32 payment_answer = 13;
+	int32 payment_rating = 14;
 
-	repeated Constraint constraints = 13;
-	repeated Tag tags = 14;
-	repeated Population populations = 15;
+	repeated Constraint constraints = 15;
+	repeated Tag tags = 16;
+	repeated Population populations = 17;
 
-	map<string, string> placeholders = 16;
+	map<string, string> placeholders = 18;
 
 	enum State {
 		INVALID = 0;
