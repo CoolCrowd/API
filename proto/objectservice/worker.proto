@@ -8,5 +8,4 @@ message Worker {
 	int32 id = 1;
 	string platform = 2;
 	string email = 3;
-	string identity = 4;
 }
