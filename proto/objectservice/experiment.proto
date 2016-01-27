@@ -6,7 +6,7 @@ option java_multiple_files = true;
 
 import "answer_type.proto";
 import "constraint.proto";
-import "platform.proto";
+import "population.proto";
 import "tag.proto";
 
 message Experiment {
@@ -33,7 +33,7 @@ message Experiment {
 
 	repeated Constraint constraints = 16;
 	repeated Tag tags = 17;
-	repeated Platform platforms = 18;
+	repeated PlatformPopulation platform_populations = 18;
 
 	map<string, string> placeholders = 19;
 
@@ -47,5 +47,10 @@ message Experiment {
 		PUBLISHED = 2;
 		STOPPING = 3;
 		STOPPED = 4;
+	}
+
+	message PlatformPopulation {
+		int32 platform_id = 1;
+		repeated Population populations = 2;
 	}
 }
