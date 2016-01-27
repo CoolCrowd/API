@@ -6,7 +6,8 @@ option java_multiple_files = true;
 
 message Population {
 	int32 id = 1;
-	string question = 2;
-	repeated string answers = 3;
-	repeated string accepted_answers = 4;
+	string name = 2;
+	string question = 3;
+	repeated string answers = 4;
+	repeated string accepted_answers = 5;
 }
