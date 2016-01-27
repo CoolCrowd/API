@@ -33,7 +33,7 @@ message Experiment {
 
 	repeated Constraint constraints = 16;
 	repeated Tag tags = 17;
-	repeated PlatformPopulations platform_populations = 18;
+	repeated PlatformPopulation platform_populations = 18;
 
 	map<string, string> placeholders = 19;
 
@@ -49,7 +49,7 @@ message Experiment {
 		STOPPED = 4;
 	}
 
-	message PlatformPopulations {
+	message PlatformPopulation {
 		string platform_id = 1;
 		repeated Population populations = 2;
 	}
