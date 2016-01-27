@@ -9,5 +9,6 @@ message Rating {
 	int32 rating = 2;
 	string feedback = 3;
 	int32 worker = 4;
-	int32 time = 5;
+	int32 quality = 5;
+	int32 time = 6;
 }
