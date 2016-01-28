@@ -45,7 +45,7 @@ message Experiment {
 		INVALID = 0;
 		DRAFT = 1;
 		PUBLISHED = 2;
-		STOPPING = 3;
+		CREATIVE_STOPPED = 3;
 		STOPPED = 4;
 	}
 
