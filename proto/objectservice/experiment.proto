@@ -8,6 +8,7 @@ import "answer_type.proto";
 import "constraint.proto";
 import "calibration.proto";
 import "tag.proto";
+import "algorithm_option.proto";
 
 message Experiment {
 	int32 id = 1;
@@ -17,9 +18,9 @@ message Experiment {
 	State state = 4;
 	AnswerType answer_type = 5;
 
-	string algorithm_task_chooser = 6;
-	string algorithm_quality_answer = 7;
-	string algorithm_quality_rating = 8;
+	AlgorithmOption algorithm_task_chooser = 6;
+	AlgorithmOption algorithm_quality_answer = 7;
+	AlgorithmOption algorithm_quality_rating = 8;
 
 	int32 answers_per_worker = 9;
 	int32 ratings_per_worker = 10;
