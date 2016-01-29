@@ -57,12 +57,6 @@ message Experiment {
 	}
 
 	message RatingOption {
-		int32 id = 1;
-		string name = 2;
-		int32 value = 3;
-	}
-
-	message RatingOption {
 		int32 experiment_rating_id = 1;
 		string name = 2;
 		int32 value = 3;
