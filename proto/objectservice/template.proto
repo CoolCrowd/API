@@ -11,4 +11,11 @@ message Template {
 	string name = 2;
 	string content = 3;
 	AnswerType answer_type = 4;
+	repeated RatingOption rating_options = 5;
+
+	message RatingOption {
+		int32 template_rating_id = 1;
+		string name = 2;
+		int32 value = 3;
+	}
 }

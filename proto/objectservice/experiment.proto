@@ -41,6 +41,7 @@ message Experiment {
 	int32 worker_quality_threshold = 20;
 
 	int32 template_id = 21;
+	repeated RatingOption rating_options = 22;
 
 	enum State {
 		INVALID = 0;
@@ -53,5 +54,17 @@ message Experiment {
 	message Population {
 		string platform_id = 1;
 		repeated Calibration calibration = 2;
+	}
+
+	message RatingOption {
+		int32 id = 1;
+		string name = 2;
+		int32 value = 3;
+	}
+
+	message RatingOption {
+		int32 experiment_rating_id = 1;
+		string name = 2;
+		int32 value = 3;
 	}
 }
