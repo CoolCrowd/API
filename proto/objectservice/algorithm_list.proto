@@ -7,5 +7,7 @@ option java_multiple_files = true;
 import "algorithm_option.proto";
 
 message AlgorithmList {
-	repeated AlgorithmOption items = 1;
+	repeated AlgorithmOption task_chooser_algorithms = 1;
+	repeated AlgorithmOption rating_quality_algorithms = 2;
+	repeated AlgorithmOption answer_quality_algorithms = 3;
 }
