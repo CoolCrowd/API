@@ -53,7 +53,7 @@ message Experiment {
 
 	message Population {
 		string platform_id = 1;
-		repeated Calibration calibration = 2;
+		repeated Calibration calibrations = 2;
 	}
 
 	message RatingOption {
