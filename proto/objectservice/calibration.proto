@@ -8,6 +8,11 @@ message Calibration {
 	int32 id = 1;
 	string name = 2;
 	string question = 3;
-	repeated string answers = 4;
-	repeated string accepted_answers = 5;
+	repeated Answer answers = 4;
+	repeated Answer accepted_answers = 5;
+
+	message Answer {
+		int32 id = 1;
+		string answer = 2;
+	}
 }
