@@ -29,7 +29,8 @@ message View {
   }
 
   message Constraint {
-    string name = 1;
+    int32 id = 1;
+    string name = 2;
   }
 
   message Picture {

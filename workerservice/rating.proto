@@ -10,4 +10,5 @@ message Rating {
   int32 experiment = 2;
   int32 answer_id = 3;
   string feedback = 4;
+  repeated int32 constraints = 5;
 }
