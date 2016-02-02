@@ -10,5 +10,6 @@ message Notification {
 	string description = 3;
 	string query = 4;
 	int32 check_period = 5;
-	int32 send_threshold = 6;
+    bool send_once = 6;
+    repeated string emails = 7;
 }
