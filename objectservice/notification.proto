@@ -4,12 +4,14 @@ package crowdcontrol;
 option java_package = "edu.kit.ipd.crowdcontrol.objectservice.proto";
 option java_multiple_files = true;
 
+import "boolean.proto";
+
 message Notification {
 	int32 id = 1;
 	string name = 2;
 	string description = 3;
 	string query = 4;
 	int32 check_period = 5;
-    bool send_once = 6;
+    Boolean send_once = 6;
     repeated string emails = 7;
 }

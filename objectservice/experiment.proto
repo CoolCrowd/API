@@ -9,6 +9,7 @@ import "constraint.proto";
 import "calibration.proto";
 import "tag.proto";
 import "algorithm_option.proto";
+import "integer.proto";
 
 message Experiment {
 	int32 id = 1;
@@ -22,15 +23,15 @@ message Experiment {
 	AlgorithmOption algorithm_quality_answer = 7;
 	AlgorithmOption algorithm_quality_rating = 8;
 
-	int32 answers_per_worker = 9;
-	int32 ratings_per_worker = 10;
-	int32 ratings_per_answer = 11;
+	Integer answers_per_worker = 9;
+	Integer ratings_per_worker = 10;
+	Integer ratings_per_answer = 11;
 
-	int32 needed_answers = 12;
+	Integer needed_answers = 12;
 
-	int32 payment_base = 13;
-	int32 payment_answer = 14;
-	int32 payment_rating = 15;
+	Integer payment_base = 13;
+	Integer payment_answer = 14;
+	Integer payment_rating = 15;
 
 	repeated Constraint constraints = 16;
 	repeated Tag tags = 17;
@@ -38,11 +39,11 @@ message Experiment {
 
 	map<string, string> placeholders = 19;
 
-    int32 payment_quality_threshold_answer = 20;
-    int32 payment_quality_threshold_rating = 21;
-	int32 worker_quality_threshold = 22;
+    Integer payment_quality_threshold_answer = 20;
+    Integer payment_quality_threshold_rating = 21;
+	Integer worker_quality_threshold = 22;
 
-	int32 template_id = 23;
+	Integer template_id = 23;
 	repeated RatingOption rating_options = 24;
 
 	enum State {
