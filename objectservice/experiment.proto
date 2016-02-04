@@ -39,12 +39,11 @@ message Experiment {
 
 	map<string, string> placeholders = 19;
 
-    Integer payment_quality_threshold_answer = 20;
-    Integer payment_quality_threshold_rating = 21;
-	Integer worker_quality_threshold = 22;
+    Integer payment_quality_threshold = 20;
+	Integer worker_quality_threshold = 21;
 
-	Integer template_id = 23;
-	repeated RatingOption rating_options = 24;
+	Integer template_id = 22;
+	repeated RatingOption rating_options = 23;
 
 	enum State {
 		INVALID = 0;
