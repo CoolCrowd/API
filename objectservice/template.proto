@@ -19,7 +19,6 @@ message Template {
 	repeated Tag tags = 7;
 
 	message RatingOption {
-		int32 template_rating_id = 1;
 		string name = 2;
 		int32 value = 3;
 	}
