@@ -52,7 +52,8 @@ message View {
 
   message Answer {
     int32 id = 1;
-    string answer = 2;
+    in32 answer_id = 2;
+    string answer = 3;
   }
 
   message RatingOption {
