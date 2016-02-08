@@ -13,6 +13,6 @@ message Rating {
 	string feedback = 4;
 	int32 worker = 5;
 	int32 quality = 6;
-	int32 time = 7;
+	int64 time = 7;
     repeated Constraint violated_constraints = 8;
 }

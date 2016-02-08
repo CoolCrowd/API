@@ -11,7 +11,7 @@ message Answer {
 	int32 experiment_id = 2;
 	int32 worker = 3;
 	string content = 4;
-	int32 time = 5;
+	int64 time = 5;
 	int32 quality = 6;
 
 	repeated Rating ratings = 7;
