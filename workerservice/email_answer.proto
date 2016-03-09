@@ -6,5 +6,5 @@ option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
 option java_multiple_files = true;
 
 message EmailAnswer {
-  int32 worker_id = 1;
+  string authorization = 1;
 }
