@@ -7,4 +7,10 @@ option java_multiple_files = true;
 
 message Email {
   string email = 1;
+  repeated PlatformParameter platform_parameters = 2;
+
+  message PlatformParameter {
+  	string key = 1;
+  	repeated string values = 2;
+  }
 }
