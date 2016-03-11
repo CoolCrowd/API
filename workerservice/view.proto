@@ -16,7 +16,7 @@ message View {
   repeated int32 answer_reservations = 5;
   string answer_type = 6;
   repeated Answer answers_to_rate = 7;
-  repeated RatingOption ratingOptions = 8;
+  repeated RatingOption rating_options = 8;
   repeated Constraint constraints = 9;
   repeated Picture pictures = 10;
   repeated Calibration calibrations = 11;
