@@ -13,7 +13,7 @@ message View {
   string title = 3;
   string description = 4;
 
-  int32 max_answers_to_give = 5;
+  repeated int32 answer_reservations = 5;
   string answer_type = 6;
   repeated Answer answers_to_rate = 7;
   repeated RatingOption ratingOptions = 8;
