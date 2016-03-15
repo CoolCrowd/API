@@ -56,6 +56,14 @@ message Experiment {
 	message Population {
 		string platform_id = 1;
 		repeated Calibration calibrations = 2;
+		Task task = 3;
+
+		enum Task {
+			INVALID = 0;
+			BOTH = 1;
+			ANSWER = 2;
+			RATING = 3;
+		}
 	}
 
 	message RatingOption {
