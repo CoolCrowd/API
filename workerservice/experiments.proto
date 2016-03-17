@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package crowdcontrol;
+
+option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
+option java_multiple_files = true;
+
+message Experiments {
+  repeated Experiment experiments = 1;
+
+  message Experiment {
+  	int32 id = 1;
+  	string name = 2;
+  }
+}
