@@ -15,6 +15,6 @@ message Answer {
 	int64 time = 6;
 	int32 quality = 7;
 	string systemresponse = 8;
-
 	repeated Rating ratings = 9;
+	bool duplicate = 10;
 }

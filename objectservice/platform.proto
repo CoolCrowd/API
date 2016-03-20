@@ -7,6 +7,7 @@ option java_multiple_files = true;
 message Platform {
 	string id = 1;
 	string name = 2;
-	bool has_calibrations = 3;
-    bool is_inactive = 4;
+	string url = 3;
+	bool has_calibrations = 4;
+    bool is_inactive = 5;
 }
