@@ -6,7 +6,7 @@ option java_package = "edu.kit.ipd.crowdcontrol.workerservice.proto";
 option java_multiple_files = true;
 
 message Rating {
-	int32 rating_id = 1;
+	int32 reservation = 1;
 	int32 rating = 2;
 	int32 experiment = 3;
 	int32 answer_id = 4;
